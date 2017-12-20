@@ -58,7 +58,7 @@ namespace Katas.CleanCode
             }
             catch
             {
-
+                Console.WriteLine("Error");
             }
             
 
