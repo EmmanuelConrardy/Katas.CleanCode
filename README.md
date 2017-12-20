@@ -11,5 +11,4 @@ If 3 or up to 10 products are bought then for every 3 products offer one for fre
 If over 11 products are bought then apply 50% off the total price.
 If negative product raise argument exception !
 
-Lot 2 : If Sunday add a 10% more discount. and if morning (before 11am) add add 1€ discount for a cup of coffee 
-and if after noon add 2€ discount for chocolate.
+Lot 2 : If Sunday add a 10% more discount.

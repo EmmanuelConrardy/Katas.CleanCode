@@ -23,11 +23,47 @@ namespace Katas.CleanCode
                 },
                  new Basket
                 {
-                    nba = 4,
-                    p = 30,
+                    nba = 8,
+                    p = 10,
                     d = 1,
                 },
+                 new Basket
+                {
+                    nba = 15,
+                    p = 10,
+                    d = 1,
+                },
+                 new Basket
+                {
+                    nba = 15,
+                    p = 10,
+                    d = 0,
+                },
+                 new Basket
+                {
+                    nba = -2,
+                    p = 30,
+                    d = 0,
+                }
+            };
+
+            var c = new CalcPmManager();
+            try
+            {
+                foreach (var b in arts)
+                {
+                    Console.WriteLine(b.ToString());
+                    Console.WriteLine(c.Calc(b.nba, b.p, b.d));
+                };
             }
+            catch
+            {
+
+            }
+            
+
+            Console.WriteLine("Satisfy ?");
+            Console.ReadKey();
         }
 
         public class Basket
@@ -36,6 +72,10 @@ namespace Katas.CleanCode
             public double p;
             public int d;
 
+            public override string ToString()
+            {
+                return $"nba:{nba} p:{p} d:{d}";
+            }
         }
     }
 }
