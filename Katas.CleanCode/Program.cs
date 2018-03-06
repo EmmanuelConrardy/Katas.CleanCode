@@ -53,7 +53,7 @@ namespace Katas.CleanCode
                 foreach (var b in arts)
                 {
                     Console.WriteLine(b.ToString());
-                    Console.WriteLine(c.Calc(b.nba, b.p, b.d));
+                    Console.WriteLine(c.GetPromotion(b.nba, b.p, b.d));
                 };
             }
             catch
